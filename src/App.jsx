@@ -131,6 +131,10 @@ export default function App() {
   );
   return (
     <section>
+      <img
+        src="./bg.jpg"
+        alt=""
+      />
       <div className="calculator-grid">
         <div className="output">
           <div className="previous-operand">

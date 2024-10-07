@@ -4,7 +4,18 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.3)
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+section img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire screen */
+  z-index: -1; /* Keeps the image behind other content */
 }
 .calculator-grid {
   display: grid;
@@ -43,4 +54,17 @@ section {
 .output .current-operand {
   color: white;
   font-size: 2.5rem;
+}
+
+@media (max-width: 424px) {
+  .calculator-grid {
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 5.5rem);
+  }
+}
+@media (max-width: 325px) {
+  .calculator-grid {
+    grid-template-columns: repeat(4, 4.5rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+  }
 }

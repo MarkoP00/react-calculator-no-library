@@ -8,10 +8,5 @@
 }
 
 body {
-  background-image: url(/public/pexels-pnw-prod-8250945.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh; /* Osigurava da pokrije celu visinu ekrana */
   margin: 0;
 }
